@@ -4,9 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Penny Enterline | Game Designer</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Header Section -->
   <header>
     <h1>Penny Enterline</h1>
     <p>Aspiring Game Designer | Developer | Programmer</p>
@@ -17,75 +19,120 @@
     </nav>
   </header>
 
+  <!-- About Me Section -->
 <section id="about">
   <h2>About Me</h2>
   <p>
-    I'm a passionate game design student at the University of Arizona with a love for both visual creativity and technical problem-solving. I specialize in 2D pixel art and enjoy bringing characters and worlds to life with tools like Aseprite. On the technical side, I’m drawn to backend development in Unity, especially scripting complex systems and gameplay mechanics in 3D environments.
+    I'm a passionate game design student at the University of Arizona with a love for both visual creativity and technical problem-solving. 
+    I specialize in 2D pixel art and enjoy bringing characters and worlds to life with tools like Aseprite. 
+    On the technical side, I’m drawn to backend development in Unity, especially scripting complex systems and gameplay mechanics in 3D environments.
   </p>
   <p>
-    What drives me most is coming up with fresh game ideas! Whether it’s a unique gameplay loop, an inventive world, or a new take on a genre. I love working on collaborative teams, blending art, code, and design to create something truly memorable.
+    What drives me most is coming up with fresh game ideas! Whether it’s a unique gameplay loop, an inventive world, or a new take on a genre. 
+    I love working on collaborative teams, blending art, code, and design to create something truly memorable.
   </p>
+
+  <h3>Skills</h3>
+  <ul>
+    <li><strong>Languages:</strong> Python, C++, Java, JavaScript</li>
+    <li><strong>Game Engines:</strong> Unity (2D/3D, C# scripting)</li>
+    <li><strong>Design Tools:</strong> Adobe Illustrator, Photoshop (basic), Aseprite</li>
+    <li><strong>Other Tools:</strong> Git, Plastic SCM, VS Code</li>
+    <li><strong>Concepts:</strong> Object-Oriented Programming, Cloud Computing (basic), Game Physics</li>
+  </ul>
+
 </section>
 
+  <!-- Projects Section -->
   <section id="projects">
     <h2>Projects</h2>
 
+    <!-- Game Projects -->
     <h3>Game Projects</h3>
-    <ul>
-<h3>Game Projects</h3>
-    <ul>
-    <li>
+
+    <!-- Jungle Escape Project -->
+    <div class="project-container">
+      <div class="project-text">
         <strong>Jungle Escape — 2D Platformer (Team Project)</strong><br />
         <em>Role: Lead Designer & Artist</em>
         <ul>
-        <li>Created the core game concept and overall level design.</li>
-        <li>Produced original 2D art using Aseprite and contributed to animation.</li>
-        <li>Collaborated on puzzle flow, gameplay balance, and visual style.</li>
+          <li>Created the core game concept and overall level design.</li>
+          <li>Produced original 2D art using Aseprite and contributed to animation.</li>
+          <li>Collaborated on puzzle flow, gameplay balance, and visual style.</li>
         </ul>
         <iframe frameborder="0" src="https://itch.io/embed/3172071?border_width=5&amp;fg_color=005f66&amp;link_color=20b9c4&amp;border_color=005f66" width="560" height="175">
-        <a href="https://pennyenterline.itch.io/jungle-escape">Jungle Escape by penny</a>
+          <a href="https://pennyenterline.itch.io/jungle-escape">Jungle Escape by penny</a>
         </iframe>
-    </li>
-    <li>
-    <strong>Until Death or Dawn — 3D Tower Defense (Team Project)</strong><br />
-    <em>Role: Gameplay Programmer</em>
-    <ul>
-        <li>Implemented placement/buying/selling and resource tracking systems.</li>
-        <li>Developed a controllable first-person shooter turret tower.</li>
-        <li>Programmed damage calculations and bullet physics using Unity engine.</li>
-    </ul>
-    <iframe frameborder="0" src="https://itch.io/embed/3171812?border_width=5&amp;fg_color=005f66&amp;link_color=20b9c4&amp;border_color=005f66" width="560" height="175">
-        <a href="https://shaggyschmacky.itch.io/until-death-or-dawn">Until Death Or Dawn by ShaggySchmacky</a>
-    </iframe>
-    </li>
+      </div>
+      <div class="project-image">
+        <img src="images/jungle_escape.png" alt="Jungle Escape Screenshot" />
+      </div>
+    </div>
 
-    </ul>
+    <!-- Until Death or Dawn Project -->
+    <div class="project-container">
+      <div class="project-text">
+        <strong>Until Death or Dawn — 3D Tower Defense (Team Project)</strong><br />
+        <em>Role: Gameplay Programmer</em>
+        <ul>
+          <li>Implemented placement/buying/selling and resource tracking systems.</li>
+          <li>Developed a controllable first-person shooter turret tower.</li>
+          <li>Programmed damage calculations and bullet physics using Unity engine.</li>
+        </ul>
+        <iframe frameborder="0" src="https://itch.io/embed/3171812?border_width=5&amp;fg_color=005f66&amp;link_color=20b9c4&amp;border_color=005f66" width="560" height="175">
+          <a href="https://shaggyschmacky.itch.io/until-death-or-dawn">Until Death Or Dawn by ShaggySchmacky</a>
+        </iframe>
+      </div>
+      <div class="project-image">
+        <img src="images/dawn_death.png" alt="Until Death or Dawn Screenshot" />
+      </div>
+    </div>
 
+    <!-- Coding Projects -->
     <h3>Coding Projects</h3>
     <ul>
       <li>
-        <strong>REST API Backend</strong><br />
-        <em>Role: Developer</em>
+        <strong>Student Registration REST API</strong><br />
+        <em>Role: Full Stack Developer</em>
         <ul>
-          <li>Designed and implemented RESTful API using Python and PostgreSQL.</li>
-          <li>Handled database queries and user authentication with secure CGI scripts.</li>
-          <li>Deployed API on cloud hosting with continuous integration.</li>
+          <li>Built a RESTful API in Python using PostgreSQL and CGI to manage students and course registrations.</li>
+          <li>Implemented CRUD functionality for students and courses, with full input validation and error handling.</li>
+          <li>Mapped endpoints and methods cleanly (e.g. <code>/students</code>, <code>/courses</code>) using standard HTTP verbs.</li>
+          <li>Created server-side logic to support course enrollment, duplicate checks, and conditional deletion.</li>
+          <li>Includes a <code>/debug</code> endpoint to inspect live database state in JSON.</li>
         </ul>
+        <!-- Optional GitHub link -->
+        <a href="https://github.com/pennyenterline/Student-Registration-REST-API" target="_blank">View GitHub Repository</a>
       </li>
       <li>
-  <strong>Multigame Website</strong><br />
-  <em>Role: CSS Stylist, Game Developer, DB Assistant</em>
-  <ul>
-    <li>Collaboratively built a hosted website featuring multiple browser-based games like Wordle.</li>
-    <li>Designed and styled the entire frontend using custom CSS for a clean, modern user experience.</li>
-    <li>Contributed to game logic implementation and assisted in setting up user login and leaderboard systems using a shared database.</li>
-    
-  </ul>
-  <a href="https://github.com/pennyenterline/multigamewebsite" target="_blank">View GitHub Repository</a></li>
-</li>
-
+        <strong>Multigame Website (Team Project)</strong><br />
+        <em>Role: CSS Stylist, Game Developer, DB Assistant</em>
+        <ul>
+          <li>Collaboratively built a hosted website featuring multiple browser-based games like Wordle.</li>
+          <li>Designed and styled the entire frontend using custom CSS for a clean, modern user experience.</li>
+          <li>Contributed to game logic implementation and assisted in setting up user login and leaderboard systems using a shared database.</li>
+        </ul>
+        <a href="https://github.com/pennyenterline/multigamewebsite" target="_blank">View GitHub Repository</a>
+      </li>
     </ul>
+      <ul>
+        <li>
+          <strong>Carcassonne Map Class Implementation</strong><br />
+          <em>Role: Game Logic Developer</em>
+          <ul>
+            <li>Implemented the <code>CarcassonneMap</code> class to manage tile placement and board state for the Carcassonne board game.</li>
+            <li>Developed methods to find map borders, validate tile adjacency, and trace roads and cities across the board.</li>
+            <li>Handled complex game logic such as connectivity checks and recursive pathfinding for roads and cities.</li>
+            <li>Ensured robust error handling and map state updates to support dynamic gameplay.</li>
+          </ul>
+          <!-- Optional GitHub link -->
+          <a href="https://github.com/pennyenterline/CarcassonneGame" target="_blank">View GitHub Repository</a>
+        </li>
+      </ul>
 
+
+
+    <!-- Marketing Projects -->
     <h3>Marketing Projects</h3>
     <ul>
       <li>
@@ -95,20 +142,25 @@
           A PC roguelike inspired by Risk of Rain 2 and Hades with seven stages and bosses themed on the seven deadly sins.
           Includes a comprehensive business plan targeting ethical monetization with Kickstarter funding, DLC, merchandise, and community building.
         </p>
-        <p><a href="pdf/Final Monetization Project.pdf" target="_blank">Download Full Monetization Project (PDF)</a></p>
+        <p>
+          <a href="pdf/Final Monetization Project.pdf" target="_blank">Download Full Monetization Project (PDF)</a>
+        </p>
       </li>
-        <li>
-        <strong>Cube Up! - 2D Mobile Game Practice Press Kit</strong><br />
+      <li>
+        <strong>Cube Up! — 2D Mobile Game Practice Press Kit</strong><br />
         <em>Role: Creator</em>
         <p>
           Cube Up combines the relaxing fun of Candy Crush with the puzzling nature of Tetris.
           Complete levels of varying toughness with different objectives in this cute and colorful world of cubes!
         </p>
-        <p><a href="pdf/Practice Press Kit.pdf" target="_blank">Download Full Practice Press Kit(PDF)</a></p>
+        <p>
+          <a href="pdf/Practice Press Kit.pdf" target="_blank">Download Full Practice Press Kit (PDF)</a>
+        </p>
       </li>
     </ul>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:pj.enterline@gmail.com">pj.enterline@gmail.com</a></p>
@@ -116,8 +168,10 @@
     <p><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a></p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Penny Enterline</p>
   </footer>
+
 </body>
 </html>
